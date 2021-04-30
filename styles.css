@@ -101,7 +101,7 @@ article ul {
 
 .article-one,
 .article-three {
-    height: 55%;
+    height: 60%;
 }
 
 .article-one {
@@ -112,7 +112,7 @@ article ul {
     background-color: #b83b5e;
     border-top: 2px solid rgba(247,247,247,0.5);
     border-right: 2px solid rgba(247,247,247,0.5);
-    height: 75%;
+    height: 85%;
 }
 
 .featured-article h2 {
@@ -166,14 +166,14 @@ article ul {
 
     .article-one:hover,
     .article-three:hover {
-        height: 60%;
+        height: 70%;
         width: 105%;
         border-top: 3px solid rgba(247,247,247,0.5);
         border-right: 3px solid rgba(247,247,247,0.5);
     }
 
     .article-two:hover {
-        height: 80%;
+        height: 95%;
         width: 105%;
         border-top: 5px solid rgba(247,247,247,0.5);
         border-right: 5px solid rgba(247,247,247,0.5);
