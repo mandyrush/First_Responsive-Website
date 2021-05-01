@@ -8,7 +8,8 @@ Purple: #6a2c70
 
 /* 
 Fonts 
-
+font-family: 'Abril Fatface', cursive;
+font-family: 'Montserrat', sans-serif;
 */
 
 * {
@@ -20,16 +21,22 @@ body {
     height: 100%;
     background: linear-gradient(to right, #f08a5d, #6a2c70);
     margin-top: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 }
 
 h1 {
-    color: #b83b5e;
+    font-family: 'Abril Fatface', cursive;
     font-size: 4rem;
+    letter-spacing: 2px;
     text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    color: #b83b5e;
     margin: 0;
 }
 
 h2 {
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
@@ -53,7 +60,13 @@ header {
 }
 
 header .tagline {
-    letter-spacing: 5px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+header .tagline .bullet {
+    color: #b83b5e;
 }
 
 header img {
@@ -89,14 +102,19 @@ article {
     padding: 1rem;
     border-radius: 15px;
     color: #ffffff;
-    transition: all 0.5s;
+    transition: transform 0.5s;
 }
 
 article ul {
     text-align: left;
     padding: 0;
     display: inline-block;
-    margin: auto;
+    margin: 0 auto;
+}
+
+article .price {
+    font-weight: 500;
+    letter-spacing: 2px;
 }
 
 .article-one,
@@ -106,12 +124,14 @@ article ul {
 
 .article-one {
     background-color: #6a2c70;
+    border-top: 3px solid #6a2c70;
+    border-right: 3px solid #6a2c70;
 }
 
 .article-two {
     background-color: #b83b5e;
-    border-top: 2px solid rgba(247,247,247,0.5);
-    border-right: 2px solid rgba(247,247,247,0.5);
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
     height: 85%;
 }
 
@@ -126,6 +146,8 @@ article ul {
 
 .article-three {
     background-color: #f08a5d;
+    border-top: 3px solid #f08a5d;
+    border-right: 3px solid #f08a5d;
 }
 
 @media (min-width: 768px) {
@@ -164,19 +186,10 @@ article ul {
         animation-iteration-count: 1;
     }
 
-    .article-one:hover,
-    .article-three:hover {
-        height: 70%;
-        width: 105%;
-        border-top: 3px solid rgba(247,247,247,0.5);
-        border-right: 3px solid rgba(247,247,247,0.5);
-    }
-
-    .article-two:hover {
-        height: 95%;
-        width: 105%;
-        border-top: 5px solid rgba(247,247,247,0.5);
-        border-right: 5px solid rgba(247,247,247,0.5);
+    article:hover {
+        transform: scale(1.07);
+        border-top: 3px solid #fff;
+        border-right: 3px solid #fff;
     }
 }
 
